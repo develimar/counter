@@ -3,6 +3,27 @@
   <component name="ChangeListManager">
     <list default="true" id="9b33d44a-dfd0-4d18-9922-e959021c1efb" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/site/about.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/accessories.html" beforeDir="false" afterPath="$PROJECT_DIR$/site/accessories.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/blog.html" beforeDir="false" afterPath="$PROJECT_DIR$/site/blog.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/blog_post.html" beforeDir="false" afterPath="$PROJECT_DIR$/site/blog_post.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/cart.html" beforeDir="false" afterPath="$PROJECT_DIR$/site/cart.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/checkout.html" beforeDir="false" afterPath="$PROJECT_DIR$/site/checkout.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/contacts.html" beforeDir="false" afterPath="$PROJECT_DIR$/site/contacts.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/icon_pack_1.html" beforeDir="false" afterPath="$PROJECT_DIR$/site/icon_pack_1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/icon_pack_2.html" beforeDir="false" afterPath="$PROJECT_DIR$/site/icon_pack_2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/site/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/index_2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/index_3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/quotation.html" beforeDir="false" afterPath="$PROJECT_DIR$/site/quotation.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/quotation_wizard.html" beforeDir="false" afterPath="$PROJECT_DIR$/site/quotation_wizard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/service_layout_1.html" beforeDir="false" afterPath="$PROJECT_DIR$/site/service_layout_1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/services_layout_2.html" beforeDir="false" afterPath="$PROJECT_DIR$/site/services_layout_2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/services_layout_3.html" beforeDir="false" afterPath="$PROJECT_DIR$/site/services_layout_3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/shop-single.html" beforeDir="false" afterPath="$PROJECT_DIR$/site/shop-single.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/shop.html" beforeDir="false" afterPath="$PROJECT_DIR$/site/shop.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/shortcodes.html" beforeDir="false" afterPath="$PROJECT_DIR$/site/shortcodes.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/tips.html" beforeDir="false" afterPath="$PROJECT_DIR$/site/tips.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,21 +78,37 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1584344503215</updated>
-      <workItem from="1584344504386" duration="1181000" />
+      <workItem from="1584344504386" duration="3381000" />
     </task>
+    <task id="LOCAL-00001" summary="c02 - Criação da pasta novo site com novo thema">
+      <created>1584346541636</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1584346541636</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="c02 - Criação da pasta novo site com novo thema" />
+    <option name="LAST_COMMIT_MESSAGE" value="c02 - Criação da pasta novo site com novo thema" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="321" y="0" key="CommitChangelistDialog2" timestamp="1584344937993">
+    <state x="413" y="113" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1584347540830">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="321" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1584344937993" />
-    <state x="275" y="99" key="Vcs.Push.Dialog.v2" timestamp="1584344951793">
+    <state x="413" y="113" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1584347540830" />
+    <state x="321" y="0" key="CommitChangelistDialog2" timestamp="1584346527770">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="99" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1584344951793" />
+    <state x="321" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1584346527770" />
+    <state x="275" y="99" key="Vcs.Push.Dialog.v2" timestamp="1584346566246">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="275" y="99" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1584346566246" />
   </component>
 </project>
