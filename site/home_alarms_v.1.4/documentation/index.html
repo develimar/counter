@@ -1,0 +1,280 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<head lang="en">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<title></title>
+	<!-- Framework CSS -->
+	<link rel="stylesheet" href="assets/blueprint-css/screen.css" type="text/css" media="screen, projection">
+	<link rel="stylesheet" href="assets/blueprint-css/print.css" type="text/css" media="print">
+	<!--[if lt IE 8]><link rel="stylesheet" href="assets/blueprint-css/ie.css" type="text/css" media="screen, projection"><![endif]-->
+	<link rel="stylesheet" href="assets/blueprint-css/plugins/fancy-type/screen.css" type="text/css" media="screen, projection">
+	<style type="text/css" media="screen">
+		p, table, hr, .box { margin-bottom:25px; }
+		.box p { margin-bottom:10px; }
+		pre,code { font-family:"Consolas", Courier New, Courier, monospace; padding:15px; background:#f7f7f7; margin:0px 0px 18px; border:1px solid #e5e5e5; line-height:18px; color:#000 }
+code { padding:0px 3px; background-image:none; background:#f5f5f5; border:none }
+pre { white-space:pre-wrap; white-space:-moz-pre-wrap; white-space:-pre-wrap; white-space:-o-pre-wrap; word-wrap:break-word }
+	</style>
+</head>
+
+
+<body>
+	<div class="container">
+	  <h3 class="center alt"> Documentation by &ldquo;Ansonika&rdquo; v1.4</h3>
+		
+		<hr>
+		
+		<h1 class="center">&ldquo;HOMEALARMS - HTML Site template&rdquo;</h1>
+		
+		<div class="borderTop">
+		  <div class="span-6 colborder info prepend-1">
+				<p class="prepend-top">
+					<strong>
+					Created: 06 Febraury 2018<br>
+                    Last update: 8 Febraury 2020<br>
+					By: Ansonika</strong>
+			  </p>
+	    </div><!-- end div .span-6 -->		
+	
+			<div class="span-12 last">
+				<p class="prepend-top append-0">Thank you for purchasing my theme. If you are happy with the theme, please <strong>TAKE A MOMENT TO RATE IT</strong> from your DOWNLOADS PAGE.
+Thanks so much!</p>
+			</div>
+		</div><!-- end div .borderTop -->
+		
+		<hr>
+		
+		<h2 id="toc" class="alt">Table of Contents</h2>
+		<ol class="alpha">
+			<li><a href="#htmlStructure">HTML Structure</a></li>
+			<li><a href="#cssFiles">CSS Files, Structure and basic modifications</a></li>
+<li><a href="#php">PHP contact form, quotation and quotation wizard</a></li>
+			<li><a href="#javascript">JavaScript</a></li>
+			<li><a href="#credits">Sources and Credit</a></li>
+            <li><a href="#updates">Updates</a></li>
+		</ol>
+        
+        <hr>       
+        
+  <h3 id="htmlStructure"><strong>A) HTML Structure</strong> - <a href="#toc">top</a></h3>
+	  <p> This theme has a fixed centered layout 1170px. It's based on Boostrap framework grid. It's ULTRA RESPONSIVE!!. 
+	  </p>
+<hr>
+
+		<h3 id="cssFiles"><strong>B) CSS Files Structure and basic modfication</strong> - <a href="#toc">top</a>	  </h3>
+	  <p>The css files are inside the css folder (minified versions included) .To modify colors, typografy, button style ecc....find the realtive comment line in style.css. Below how the file is organized:</p>
+<p>1. SITE STRUCTURE and TYPOGRAPHY<br>
+  - 1.1 Typography<br>
+  - 1.2 Buttons<br>
+  - 1.3 Structure</p>
+<p>2. CONTENT<br>
+  - 2.1 Home<br>
+  - 2.2 About<br>
+  - 2.3 Services<br>
+  - 2.4 Quotation<br>
+  - 2.5 Quotation wizard<br>
+  - 2.6 Tips / faq<br>
+  - 2.7 Contact us</p>
+<p>3. COMMON<br>
+  - Containers styles<br>
+  - Form styles<br>
+  - Tabs, collapse<br>
+  - etc</p>
+
+<p><strong>Home with video header (fallback with a background image in tablets and mobile)</strong><br>
+ </p>
+<pre>1)Save you mp4 and ogv video in the video folder.The name of the files must match the datasource tag:<br>
+Example<br>data-teaser-source=&quot;video/intro&quot; (folder/name_files)=<br>intro.mp4<br>intro.ogv<br><br>2) To change the fallback background image open css/style.css an find this class in the &quot;responsive section&quot;<br><br>#hero_video{
+background: #333 url(../img/sub_header_home.jpg);
+background-size:cover;
+background-position: center bottom;}<br></pre>
+
+<p><strong>LAYERSLIDER</strong><br>
+Please refer this <a href="LAYERSLIDER/documentation/documentation.html">DOCUMENTATION</a></p>
+
+     <p><strong>Change the address of Google map in contact page</strong>: open mapmarker_func.js and change with your latitude and longitude + your full address. You can change also your map marker (that has to be png24); you can use also the psd provided in the psd folder.</p>
+ <pre>//set up markers <br>		var myMarkers = {&quot;markers&quot;: [<br>				{&quot;latitude&quot;: &quot;51.511732&quot;, &quot;longitude&quot;:&quot;-0.123270&quot;, &quot;icon&quot;: &quot;img/map-marker2.png&quot;}<br>			]<br>		};<br>		<br>		//set up map options<br>		$(&quot;#map&quot;).mapmarker({<br>			zoom	: 14,<br>			center	: 'Covent Garden London', //YOUR FULL ADDRESS <br>			markers	: myMarkers<br>		});</pre>
+ 
+ <strong>COMMON ISSUE ON GOOGLE MAP</strong> (if the Google map works locally but does not works once the site will be online)<br>
+  <pre>In some cases Google requires an api key for the Google map.
+<br>You can create your own "Standard api key" here <br>by clicking on &quot;GET KEY&quot; BUTTON (on Authentication for the standard API—API keys section), <br>and follow the steps.
+<a href="https://developers.google.com/maps/documentation/javascript/get-api-key#key" target="_blank">https://developers.google.com/maps/documentation/javascript/get-api-key#key</a>
+
+Here some additionale info on how to create an API KEY <a href="http://thegrue.org/google-map-javascript-api-key/">http://thegrue.org/google-map-javascript-api-key/</a><br><br>Then replace at the bottom of every page that use Google map, this line<br>
+&lt;script src=&quot;http://maps.googleapis.com/maps/api/js&quot;&gt;&lt;/script&gt; OR 
+&lt;script type="text/javascript" src="<a target="_blank" href="http://maps.googleapis.com/maps/api/js?sensor=false">http://maps.googleapis.com/maps/api/js?sensor=false</a>"&gt;&lt;/script&gt;<br><br>with your api key included, like the example below<br>&lt;script src="<a target="_blank" href="http://maps.googleapis.com/maps/api/js?key=AIzaSyAaO0WhIut5GCNr9y8xTA36EPj87NEHptM">http://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY</a>"&gt;&lt;/script&gt;
+
+NOTE: if you apply the api key, the map does not load on your local computer. <br>you should upload your site to view it.
+  </pre>
+  
+   <p><strong>Set up  site launch page located in site_launch folder</strong><br>
+  Open functions.js and find this line of code:</p>
+<pre><strong>SET THE DATE</strong><br>Open coming_soon/js/functions.js and find this line.<br><br>var target = new Date(&quot;July 15 2014 13:30:00 GMT+0100&quot;); //replace with YOUR DATE
+
+<strong>SET NEWSLETTER EMAIL</strong><br>Open coming_soon/assets/newsletter.php and find this commented code.<br><br>//$address = &quot;your email address&quot;;<br>$address = &quot;test@domain.com&quot;;<br></pre>
+ 
+<p><strong>THE GRID</strong><br> 
+      Please refer to this <a href="http://getbootstrap.com/">documentation Boostrap</a></p>
+    
+      <hr>
+<br>
+      <h3 id="php"><strong>C) PHP files: Contact form, quick contact, quotation and quotation wizard</strong> - <a href="#php">top</a></h3>
+      <p>The templates use two different types of php scriptst: one for the contact form (all the files are located in the assets folder), second for the quotation and quotation wizard page.<br>
+      <br>
+      <p><strong>Below the script for the contact form</strong>, you can set the error messages in the assets/validate.js.</p>
+        <img src="assets/images/form.jpg" alt="" width="754" height="557" style="border:1px solid #ccc;">
+      <p>If you doesn't recieve the email please first check:<br>
+      1) Your spam folder<br>
+      2) If you hosting requires special settings<br>
+      3) If your email  has to be managed from the same hosting provider<br>
+      4) Set the permission of the asset folder on your host to 755 your FTP client
+      5) This script <strong>does not support SMTP</strong> authentication. Contact me.
+      </p>
+	
+    <h4><strong>Quotation wizard</strong></h4>
+    <p><strong>Add an input field into  form first step<br>
+      <br>
+    </strong>1) Apply the proper name to the input (&lt;input type=&quot;text&quot; name=&quot;new_field&quot; /&gt;) <br>
+    2) Call validation/error messages for the new field: open js/quotation-validate.js  and look the example below in bold:</p>
+      <pre>$('#custom').validate({<br>errorPlacement: function(error, element) {<br>$('#custom .stepy-error').append(error);<br>}, rules: {<br>'name':		'required',<br>'last_name':		'required',<br>'email':		'required',<br>'newsletter':	'required',
+<strong>'new field':	'required',</strong><br>'address':		'required',<br>'zip_code':			'required',<br>'terms':		'required' 	// BE CAREFUL: last has no comma<br>}, messages: {<br>'name':		{ required: 	 'Name required' },<br>'last_name':		{ required: 	 'Last name required' },<br>'email':		{ required: 	 'Invalid e-mail!' },					<br>'newsletter':	{ required:  'Newsletter required!' },
+<strong>'new_field':	{ required:  'New field required!' },</strong><br>'address':		{ required:  'Address required!' },<br>'zip_code':			{ required:  'Zip code required' },<br>'terms':		{ required:  'Please accept terms!' }<br>}<br>});</pre>
+      <p>3) Then open quotation_wizard.php and follow the instructions/example below:<br>
+      <pre>
+$mail = $_POST['email'];
+
+/*$subject = "".$_POST['subject'];*/
+$to = "test@ansonika.com"; <strong>&lt;&lt;&lt; write your email here &gt;&gt;&gt;</strong>
+$subject = "Sign up from HOMEALARMS"; <strong>&lt;&lt;&lt; write your subject &gt;&gt;&gt;</strong>
+$headers = "From: HOMEALARMS web site <noreply@yourdomain.com>";
+$message = "Message\n";
+$message .= "\nName: " . $_POST['name'];
+$message .= "\nLast Name: " . $_POST['last_name'];
+$message .= "\nEmail: " . $_POST['email'];
+$message .= "\nPhone number: " . $_POST['phone_number'];
+$message .= "\nSubscribe to newsletter: " . $_POST['newsletter'];
+<strong>$message .= "\nNew field title: " . $_POST['new_field'];</strong>
+$message .= "\nAddress: " . $_POST['address'];
+$message .= "\nZip code: " . $_POST['zip_code'];
+$message .= "\nMessage: " . $_POST['message'];
+$message .= "\nTerms and conditions accepted: " . $_POST['terms'];
+						
+//Receive Variable
+$sentOk = mail($to,$subject,$message,$headers);
+	</pre>
+  
+      <p><strong>Add one more step </strong><br>
+      Each step is determined by the fieldset tag...so simply add a fieldset. Use the tag legend to describe your step/tab (Ex. &lt;legend&gt;Personal info&lt;/legend&gt;)</p>
+      <pre> &lt;fieldset title=&quot;Step 1&quot;&gt;<br>  ......       <br> &lt;/fieldset&gt;&lt;!-- End Step one --&gt;<br>        <br> &lt;fieldset title=&quot;Step 2&quot; &gt;<br>  ......<br> &lt;/fieldset&gt;&lt;!-- End Step two --&gt;
+
+ etc....
+      </pre>
+   <h4><strong>Quotation normal</strong></h4>
+   It use a similar PHP script of the wizard, except for the validation that is simplified. I you need to validate/makes required a field...simply add the class "required" to the input.
+      <br>
+      <hr>
+<h3 id="javascript"><strong>D) JavaScript</strong> - <a href="#toc">top</a></h3>
+		
+	  <p>This theme use These Javascript (minified versions included). i've included the common theme scripts in a single file for a fast edit and load.</p>
+      <p><strong>common_scripts.js content:
+      </strong>
+      <ul>
+      <li>Boostrap.js</li>
+      <li>Menu.js</li>
+      <li>Footer Reveal effect</li>
+      <li>Headroom.js - Fixed header effect</li>
+      <li>Fixed header effect</li>
+      <li>Magnifc-popup.js</li>
+      <li>Retina-replace.js</li>
+      <li>Owl carousel</li>
+      </ul>
+      </p>
+      <p><strong>Below a full list of js used.</strong></p>
+	  <p><img src="assets/images/js.jpg" width="245" height="459" style=" border: 1px solid #ccc"></p>
+	  <hr>
+		
+		<h3 id="credits"><strong>E) Sources and Credits</strong> - <a href="#toc">top</a></h3>
+		
+	  <p>I've used the following images, icons or other files as listed.
+		
+	  <ul>
+        <li><a href="http://twitter.github.io/bootstrap/">Twitter Bootstrap</a></li>
+        <li><a href="http://fontello.com/">Fontello</a></li>
+        <li><a href="http://www.elegantthemes.com/blog/resources/elegant-icon-font">Elegant Icon font</a></li>
+        <li><a href="http://dimsemenov.com/plugins/magnific-popup/">Magnific popup</a></li>
+        <li><a href="http://github.com/leonsmith/retina-replace-js">Retina replace</a></li>
+         <li><a href="http://bassistance.de/jquery-plugins/jquery-plugin-validation/">Jquery validate</a></li>
+        <li><a href="http://jquery.com/">Jquery</a></li>
+        <li><a href="https://github.com/wbotelhos/stepy">Jquery Stepy wizard</a></li>
+        <li><a href="https://owlcarousel2.github.io/OwlCarousel2/">Owl carousel</a></li>
+        <li><a href="https://github.com/IainAndrew">Footer reveal</a></li>
+        <li><a href="http://wicky.nillia.ms/headroom.js/">Sticky header effect</a></li>
+	  </ul>
+		<p>Images are not included.</p>
+		<hr>
+        <h3 id="updates"><strong>E) Updates</strong> - <a href="#toc">top</a></h3>
+         <h4>Version 1.4 8 February 2020</h4>
+      <ul>
+        	<li>Updated Documentation</li>
+    </ul>
+        <h4>Version 1.3 11 December 2018</h4>
+   	  <ul>
+        <li>Removed @import (from March/April 2019 will no longer supported by Google Chrome Browser)</li>
+      </ul>
+        <pre>HOW TO FIX FROM PREVIOUS VERSION
+
+1) Update css/style.css or remove @import for Google Font
+Add on every html pages:
+&lt;!-- GOOGLE WEB FONT --&gt;<br>&lt;link href=&quot;https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&quot; rel=&quot;stylesheet&quot;&gt;
+
+Same changes for the coming soon page.</pre>
+      <h4>Version 1.2 23 August 2018</h4>
+   	  <ul>
+        <li>1) Fixed an issue (disalignement) on Ipad for the phone number on top header row. </li>
+        <li>2) Improved/changed  the grid  for the footer blocks </li>
+        </ul>
+        <pre>HOW TO FIX FROM PREVIOUS VERSION
+
+1) 1.1 Update the class a#phone_top in style.css aprox line 240
+   1.2 Change the order of the html code like the example below
+&lt;ul id=&quot;top_links&quot;&gt;<br>&lt;li&gt;&lt;a href=&quot;tel://004542344599&quot; id=&quot;phone_top&quot;&gt;..&lt;/a&gt;&lt;span id=&quot;opening&quot;&gt;Mon - Sat 8.00/18.00&lt;/span&gt;&lt;/li&gt;<br>&lt;li class=&quot;hidden-xs&quot;&gt;&lt;a href=&quot;#0&quot;&gt;Purchase this template&lt;/a&gt;&lt;/li&gt;<br>&lt;/ul&gt;
+
+2) Takes as reference the footer html grid classes.</pre>
+        <h4>Version 1.1 09 April 2018</h4>
+   	  <ul>
+        <li>Fixed a scroll issue on first page load (Home page only) for Microsoft Edge and Firefox</li>
+        </ul>
+        <pre>HOW TO FIX FROM PREVIOUS VERSION
+
+1) Update the following files: js/jquery.stepy.min.js, js/jquery.stepy.js</pre>
+      <hr>
+
+<p><strong><br>
+    <img src="assets/images/avatar.jpg" width="80" height="80"><br>
+	  <br>
+    Once again, thank you so much for purchasing this theme. Please take a moment to rate it from your Downloads page.</strong><br> 
+		  
+<h3>Need support?</h3>
+For support contact me using the form on my profile page <span class="text_medium">with subject <strong>[ThemeForest Support]  Template name</strong></span>, or via the Support Tab on the item page. You will receive an answer within 24-48 hours (working days)  GMT  +1.
+<ul>
+<li>I only provide support for fixing bugs or small issues on my items.</li>
+<li>I don't provide free support for additional custom modifications to the items.</li>
+<li>Please provide your site link, screenshots and other information about your issue.</li>
+<li>Read <a href="http://themeforest.net/page/item_support_policy" rel="nofollow">ENVATO support terms</a></li>
+</ul>
+
+<h3>Need customization or availability for freelance projects?</h3>
+Just send an email via profile page form; please don't forget to specify:
+<ul>
+<li>if you are a company, agency or private user</li>
+<li>all the information about your projects, needs, site urls, project sheet, etc..</li>
+<li>from which country you are</li>
+<li>if you have a deadline</li>
+<li>if you have basic knowledge of  HTML , CSS, JS,  PHP</li>
+</ul>
+<p class="append-bottom alt large"><strong>Ansonika</strong></p>
+		<p><a href="#toc">Go To Table of Contents</a></p>
+		
+		<hr class="space">
+	</div><!-- end div .container -->
+</body>
+</html>
