@@ -1,0 +1,167 @@
+Application path: /online/php/app.php?install-wizard-2
+2020-01-31 09:38:26 [error] SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: NO)
+Stack trace:
+/home/counteract/public_html/online/php/service/Database.php:44 (Logger:error())
+/home/counteract/public_html/online/php/service/Database.php:62 (Database:connect())
+/home/counteract/public_html/online/php/service/Database.php:25 (Database:reconnect())
+/home/counteract/public_html/online/php/lib/Service.php:17 (Database:onRegister())
+/home/counteract/public_html/online/php/lib/ServiceContainer.php:47 (Service:setServiceContainer())
+/home/counteract/public_html/online/php/lib/Controller.php:33 (ServiceContainer:get())
+/home/counteract/public_html/online/php/controller/InstallController.php:49 (Controller:get())
+/home/counteract/public_html/online/php/app/Application.php:155 (InstallController:wizard2Action())
+/home/counteract/public_html/online/php/app/Application.php:79 (Application:runAction())
+/home/counteract/public_html/online/php/app.php:26 (Application:run())
+
+Application path: /online/php/app.php?install-wizard-3
+2020-01-31 09:38:34 [info] Application installed
+Application path: /online/php/app.php?logout
+2020-01-31 09:43:01 [info] Log out, user: admin
+Application path: /online/php/app.php?login
+2020-01-31 09:43:05 [info] Failed login, user: elimar
+Application path: /online/php/app.php?login
+2020-01-31 09:43:11 [info] Failed login, user: elimar
+Application path: /online/php/app.php?login
+2020-01-31 09:43:14 [info] Failed login, user: elimar
+Application path: /online/php/app.php?login
+2020-01-31 09:43:20 [info] Failed login, user: Elimar
+Application path: /online/php/app.php?login
+2020-01-31 09:43:23 [info] Successful login, user: admin
+Application path: /online/php/app.php?logout
+2020-01-31 09:43:44 [info] Log out, user: admin
+Application path: /online/php/app.php?login
+2020-01-31 09:43:47 [info] Failed login, user: elimar
+Application path: /online/php/app.php?login
+2020-01-31 09:44:26 [info] Failed login, user: elimar
+Application path: /online/php/app.php?login
+2020-01-31 09:44:31 [info] Successful login, user: admin
+Application path: /online/php/app.php?logout
+2020-01-31 09:45:49 [info] Log out, user: admin
+Application path: /online/php/app.php?login
+2020-01-31 09:45:53 [info] Failed login, user: elimar
+Application path: /online/php/app.php?login
+2020-01-31 09:45:59 [info] Failed login, user: elimar
+Application path: /online/php/app.php?login
+2020-01-31 09:46:04 [info] Failed login, user: elimar
+Application path: /online/php/app.php?login
+2020-01-31 09:46:09 [info] Successful login, user: admin
+Application path: /online/php/app.php?logout
+2020-01-31 09:47:38 [info] Log out, user: admin
+Application path: /online/php/app.php?login
+2020-01-31 09:47:46 [info] Successful login, user: elimar.pc@gmail.com
+Application path: /online/php/app.php?operator-get-typing-status
+2020-01-31 09:47:52 parse_ini_file(/home/counteract/public_html/online/php/../data/memory.dat): failed to open stream: No such file or directory on line 97 in /home/counteract/public_html/online/php/service/Memory.php
+Application path: /online/php/app.php?operator-get-typing-status
+2020-01-31 09:47:58 parse_ini_file(/home/counteract/public_html/online/php/../data/memory.dat): failed to open stream: No such file or directory on line 97 in /home/counteract/public_html/online/php/service/Memory.php
+Application path: /online/php/app.php?operator-get-typing-status
+2020-01-31 09:48:03 parse_ini_file(/home/counteract/public_html/online/php/../data/memory.dat): failed to open stream: No such file or directory on line 97 in /home/counteract/public_html/online/php/service/Memory.php
+Application path: /online/php/app.php?operator-get-typing-status
+2020-01-31 09:48:08 parse_ini_file(/home/counteract/public_html/online/php/../data/memory.dat): failed to open stream: No such file or directory on line 97 in /home/counteract/public_html/online/php/service/Memory.php
+Application path: /online/php/app.php?operator-get-typing-status
+2020-01-31 09:48:13 parse_ini_file(/home/counteract/public_html/online/php/../data/memory.dat): failed to open stream: No such file or directory on line 97 in /home/counteract/public_html/online/php/service/Memory.php
+Application path: /online/php/app.php?operator-get-typing-status
+2020-01-31 09:48:17 parse_ini_file(/home/counteract/public_html/online/php/../data/memory.dat): failed to open stream: No such file or directory on line 97 in /home/counteract/public_html/online/php/service/Memory.php
+Application path: /online/php/app.php?operator-update-typing-status
+2020-01-31 09:48:18 parse_ini_file(/home/counteract/public_html/online/php/../data/memory.dat): failed to open stream: No such file or directory on line 97 in /home/counteract/public_html/online/php/service/Memory.php
+2020-01-31 09:48:18 parse_ini_file(/home/counteract/public_html/online/php/../data/memory.dat): failed to open stream: No such file or directory on line 97 in /home/counteract/public_html/online/php/service/Memory.php
+2020-01-31 09:48:18 array_merge(): Argument #1 is not an array on line 102 in /home/counteract/public_html/online/php/service/Memory.php
+2020-01-31 09:48:18 array_keys() expects parameter 1 to be array, boolean given on line 104 in /home/counteract/public_html/online/php/service/Memory.php
+2020-01-31 09:48:18 Invalid argument supplied for foreach() on line 104 in /home/counteract/public_html/online/php/service/Memory.php
+2020-01-31 09:48:18 Invalid argument supplied for foreach() on line 79 in /home/counteract/public_html/online/php/service/Memory.php
+Application path: /online/php/app.php?logout
+2020-01-31 10:02:08 [info] Log out, user: elimar
+Application path: /online/php/app.php?login
+2020-01-31 10:02:27 [info] Successful login, user: admin
+Application path: /online/php/app.php?logout
+2020-01-31 10:25:02 [info] Log out, user: admin
+Application path: /online/php/app.php
+2020-01-31 10:25:15 [info] Route / not found
+Application path: /online/php/app.php?login
+2020-02-04 01:47:45 [info] Successful login, user: elimar.pc@gmail.com
+Application path: /online/php/app.php?login
+2020-02-04 01:48:44 [info] Successful login, user: elimar.pc@gmail.com
+Application path: /online/php/app.php?logout
+2020-02-04 01:48:56 [info] Log out, user: elimar
+Application path: /online/php/app.php?login
+2020-02-04 01:48:59 [info] Failed login, user: elimar.pc@gmail.com
+Application path: /online/php/app.php?login
+2020-02-04 01:49:03 [info] Failed login, user: elimar.pc@gmail.com
+Application path: /online/php/app.php?login
+2020-02-04 01:49:10 [info] Failed login, user: elimar.pc@gmail.com
+Application path: /online/php/app.php?logout
+2020-02-04 01:49:19 [info] Log out, user: elimar
+Application path: /online/php/app.php?login
+2020-02-04 01:49:33 [info] Successful login, user: elimar.pc@gmail.com
+Application path: /online/php/app.php?logout
+2020-02-04 01:51:42 [info] Log out, user: elimar
+Application path: /online/php/app.php?login
+2020-02-04 01:51:44 [info] Failed login, user: Administrativo
+Application path: /online/php/app.php?login
+2020-02-04 01:51:54 [info] Failed login, user: administrativo@counteract.com.br
+Application path: /online/php/app.php?login
+2020-02-04 01:51:59 [info] Failed login, user: administrativo@counteract.com.br
+Application path: /online/php/app.php?login
+2020-02-04 01:52:05 [info] Failed login, user: administrativo@counteract.com.br
+Application path: /online/php/app.php?login
+2020-02-04 01:52:09 [info] Failed login, user: administrativo@counteract.com.br
+Application path: /online/php/app.php?login
+2020-02-04 01:52:14 [info] Successful login, user: elimar.pc@gmail.com
+Application path: /online/php/app.php?logout
+2020-02-04 01:53:57 [info] Log out, user: elimar
+Application path: /online/php/app.php?login
+2020-02-04 01:54:01 [info] Failed login, user: elimar
+Application path: /online/php/app.php?login
+2020-02-04 01:54:08 [info] Successful login, user: admin
+Application path: /online/php/app.php?logout
+2020-02-04 01:55:05 [info] Log out, user: admin
+Application path: /online/php/app.php?login
+2020-02-04 01:55:07 [info] Successful login, user: admin
+Application path: /online/php/app.php?logout
+2020-02-04 01:55:52 [info] Log out, user: admin
+Application path: /online/php/app.php?login
+2020-02-04 01:55:53 [info] Failed login, user: administrativo
+Application path: /online/php/app.php?login
+2020-02-04 01:55:57 [info] Successful login, user: admin
+Application path: /online/php/app.php?logout
+2020-02-04 01:56:23 [info] Log out, user: admin
+Application path: /online/php/app.php?login
+2020-02-04 02:00:36 [info] Successful login, user: admin
+Application path: /online/php/app.php?logout
+2020-02-04 02:02:25 [info] Log out, user: admin
+Application path: /online/php/app.php?login
+2020-02-04 02:02:31 [info] Successful login, user: admin
+Application path: /online/php/app.php?logout
+2020-02-04 02:02:47 [info] Log out, user: admin
+Application path: /online/php/app.php?login
+2020-02-04 02:03:14 [info] Successful login, user: administrativo@counteract.com.br
+Application path: /online/php/app.php?logout
+2020-02-04 02:06:38 [info] Log out, user: Administrativo
+Application path: /online/php/app.php?login
+2020-02-04 02:07:01 [info] Successful login, user: administrativo@counteract.com.br
+Application path: /online/php/app.php?logout
+2020-02-04 02:07:19 [info] Log out, user: Administrativo
+Application path: /online/php/app.php?login
+2020-02-04 02:07:24 [info] Successful login, user: admin
+Application path: /online/php/app.php?logout
+2020-02-04 02:07:55 [info] Log out, user: admin
+Application path: /online/php/app.php?login
+2020-02-04 02:08:02 [info] Successful login, user: administrativo@counteract.com.br
+Application path: /online/php/app.php?logout
+2020-02-04 02:08:26 [info] Log out, user: Administrativo
+Application path: /online/php/app.php?login
+2020-02-04 12:00:55 [info] Successful login, user: administrativo@counteract.com.br
+Application path: /online/php/app.php?logout
+2020-02-04 12:03:19 [info] Log out, user: Administrativo
+Application path: /online/php/app.php?login
+2020-02-06 07:22:07 [info] Successful login, user: administrativo@counteract.com.br
+Application path: /online/php/app.php?login
+2020-02-07 07:32:59 [info] Successful login, user: administrativo@counteract.com.br
+Application path: /online/php/app.php?login
+2020-02-07 10:59:20 [info] Successful login, user: administrativo@counteract.com.br
+Application path: /online/php/app.php?login
+2020-02-10 11:49:36 [info] Successful login, user: administrativo@counteract.com.br
+Application path: /online/php/app.php?login
+2020-02-11 14:01:54 [info] Successful login, user: administrativo@counteract.com.br
+Application path: /online/php/app.php?login
+2020-02-12 11:47:34 [info] Successful login, user: administrativo@counteract.com.br
+Application path: /online/php/app.php?login
+2020-02-20 07:22:00 [info] Successful login, user: administrativo@counteract.com.br

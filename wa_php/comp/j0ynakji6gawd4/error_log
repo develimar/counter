@@ -1,0 +1,6 @@
+[07-Jun-2017 22:07:36 America/New_York] PHP Fatal error:  Call to undefined function json_encode() in /home/counteract/public_html/wa_php/waStaticFunction.php on line 52
+[07-Jun-2017 22:13:08 America/New_York] PHP Fatal error:  Call to undefined function json_encode() in /home/counteract/public_html/wa_php/waStaticFunction.php on line 52
+[07-Jun-2017 22:13:56 America/New_York] PHP Fatal error:  Call to undefined function json_encode() in /home/counteract/public_html/wa_php/waStaticFunction.php on line 52
+[07-Jun-2017 22:27:22 America/New_York] PHP Fatal error:  Call to undefined function json_encode() in /home/counteract/public_html/wa_php/waStaticFunction.php on line 52
+[07-Jun-2017 22:27:27 America/New_York] PHP Fatal error:  Call to undefined function json_encode() in /home/counteract/public_html/wa_php/waStaticFunction.php on line 52
+[26-Jun-2017 18:27:54 America/New_York] PHP Fatal error:  Call to undefined function json_encode() in /home/counteract/public_html/wa_php/waStaticFunction.php on line 52
